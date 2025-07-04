@@ -37,7 +37,6 @@ public class MessageController {
 	@MessageMapping("/user")
 	@SendTo("/topic/user")
 	public User newUser(@RequestBody User user) {
-		// Process the user join or leave event
 		return user;
 	}
 }
